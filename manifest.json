@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Github Search",
+    "version": "1.0.0",
+    "description": "Essential for Serching in Github",
+    "author": "pidjak",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["contextMenus", "activeTab", "scripting"],
+    "background": {
+        "service_worker": "scripts/background.js"
+    }
+}

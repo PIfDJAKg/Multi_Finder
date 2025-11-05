@@ -1,0 +1,61 @@
+body {
+    background-image: linear-gradient(rgb(0, 44, 138), rgb(0, 0, 0));
+}
+
+h1 {
+    color: aliceblue;
+    text-align  : center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+}
+
+.simpleEditText {
+    width: 249px;
+    height: 35px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #6296f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold; 
+    padding-left: 10px;
+}
+
+.simpleEditText:hover {
+    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px rgb(69, 131, 240);
+}
+
+.simpleEditText:active {
+    background-color: #466daf;
+    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px #4c75bd;
+}
+
+.simpleButton {
+    margin-top: 20px;
+    width: 260px;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.simpleButton:hover {
+    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px #3C82F8;
+}
+
+.simpleButton:active {
+    background-color: #0740a3;
+    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px #0849b8;
+}
+
+.main_container {
+    width: 260px;
+    height: 200px;
+    align-content: center;
+}
