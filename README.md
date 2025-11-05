@@ -1,10 +1,19 @@
-# Github Search Extension - Fast Github searching from any text
+# Multi_Finder - Fast searching from any text
 ***Github Search*** — is a browser extension that lets you search GitHub with one click, directly from the context menu or via the extension's pop-up window.
 
 ## ⚠️ Warning ⚠️
 This extension is developed for Chrome and other Chromium-based browsers.
 
-## Supported Browsers
+## 📰 Sites for searching 📰
+### You can search info on this sites
++ Github
++ Wikipedia
++ StackOverflow
++ PyPI
++ Reddit
++ Pinterest
+
+## 📥 Supported Browsers 📥
 | Name    | must support | checked |
 |---------|--------------|---------|
 | Chrome  | Yes ✅      | Yes ✅  |
@@ -18,9 +27,10 @@ This extension is developed for Chrome and other Chromium-based browsers.
 + 🌐 Works on any page where text can be selected.
 
 ## 📸 Preview 📸
-| Context Menu                                                                           | Popup window                                                                           |
-|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-|![1105](https://github.com/user-attachments/assets/3a64d7e9-eff1-45d7-b52a-ffc171445b3d)|![chrome_sk1IFZW7Y7](https://github.com/user-attachments/assets/e01d981c-490c-4205-a958-1923902ccca4)
+| Context Menu                                                                                        | Popup window                                                                                        |
+|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+|![chrome_QL5FixVxP4](https://github.com/user-attachments/assets/d3194df4-7b97-46c8-9cc0-18638ebfaa70)|![chrome_MleuAWaLlm](https://github.com/user-attachments/assets/b4b1b65a-fd08-46fa-9e7b-4d8d623da518)|
+
 
 ## 🛠️ Installation 🛠️
 1. Download the Zip file from the releases page
