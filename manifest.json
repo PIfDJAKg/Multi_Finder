@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Github Search",
-    "version": "1.0.0",
-    "description": "Essential for Serching in Github",
+    "name": "Multi Finder",
+    "version": "1.1.0",
+    "description": "Essential for fast Search",
     "author": "pidjak",
     "action": {
         "default_popup": "popup.html"

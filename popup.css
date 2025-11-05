@@ -1,30 +1,39 @@
+@font-face {
+    font-family: "inter";
+    src: url("fonts/Inter-SemiBold.otf");
+}
+
 body {
-    background-image: linear-gradient(rgb(0, 44, 138), rgb(0, 0, 0));
+    background-color: #0d162a;
 }
 
 h1 {
+    margin-top: -5px;
     color: aliceblue;
     text-align  : center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "inter";
     font-size: 28px;
 }
 
 .simpleEditText {
-    width: 249px;
-    height: 35px;
+    margin-top: 0px;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    width: 210px;
+    height: 44px;
     border: 0px;
     border-radius: 10px;
     color: white;
     transition: .2s linear;
-    background: #6296f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #19233b;
+    font-family: 'inter';
     font-size: 18px;
     font-weight: bold; 
     padding-left: 10px;
 }
 
 .simpleEditText:hover {
-    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px rgb(69, 131, 240);
+    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px #4583f0;
 }
 
 .simpleEditText:active {
@@ -32,30 +41,54 @@ h1 {
     box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px #4c75bd;
 }
 
-.simpleButton {
-    margin-top: 20px;
-    width: 260px;
-    height: 40px;
-    border: 0px;
+.baseSelect {
+    margin-top: 4px;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    width: 220px;
+    height: 44px;
+    border: 5px;
     border-radius: 10px;
     color: white;
     transition: .2s linear;
-    background: #0B63F6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #19233b;
+    font-family: 'inter';
     font-size: 18px;
+    font-weight: bold; 
+    padding-left: 10px;
+}
+
+.simpleButton {
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    width: 220px;
+    height: 44px;
+    background: #2a6ef5;
+    font-family: "inter";
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .2s linear;
+    color: white;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
 }
 
 .simpleButton:hover {
-    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px #3C82F8;
+    background: #1765ff;
+    box-shadow: 0 5px 0 #0846d6;
 }
 
 .simpleButton:active {
-    background-color: #0740a3;
-    box-shadow: 0 0 0 2px rgb(41, 41, 41), 0 0 0 4px #0849b8;
+    background: #0d44b3;
+    box-shadow: none;
 }
 
 .main_container {
     width: 260px;
-    height: 200px;
+    height: 260px;
     align-content: center;
 }

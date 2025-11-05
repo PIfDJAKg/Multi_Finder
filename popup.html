@@ -7,9 +7,17 @@
     </head>
     <body>
         <div class="main_container">
-            <h1>Find on Github</h1>
-            <input type="text" class="simpleEditText" id="searchTextEdit">
-            <button id="searchButton" class="simpleButton"><b>🔎 Find 🔍</b></button>
+            <h1>Multi Finder</h1>
+            <input placeholder="Search query" type="text" class="simpleEditText" id="searchTextEdit">
+            <select class="baseSelect" id="selectValue">
+                <option value="github">Github</option>
+                <option value="wikipedia">Wikipedia</option>
+                <option value="stackoverflow">StackOverflow</option>
+                <option value="pypi">PyPI</option>
+                <option value="reddit">Reddit</option>
+                <option value="pinterest">Pinterest</option>
+            </select>
+            <button id="searchButton" class="simpleButton">Find</button>
         </div>
         <script src="scripts/popup.js" defer></script>
     </body>
