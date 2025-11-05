@@ -10,7 +10,7 @@ This extension is developed for Chrome and other Chromium-based browsers.
 | Chrome  | Yes ✅      | Yes ✅  |
 | Brave   | Yes ✅      | Yes ✅  |
 | Edge    | Yes ✅      | Yes ✅  |
-| Yendex  | Yes ✅      | Yes ⛔️  |
+| Yendex  | Yes ✅      | No  ⛔️  |
 
 ## 🚀 Possibilities 🚀
 + 🖱 Contextual search: Select any text on the page → right-click → select _«Find on GitHub»_ → a new tab will open with your search terms.
