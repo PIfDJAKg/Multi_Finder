@@ -1,8 +1,7 @@
 # Multi_Finder - Fast searching from any text
 ***Github Search*** — is a browser extension that lets you search GitHub with one click, directly from the context menu or via the extension's pop-up window.
 
-## ⚠️ Warning ⚠️
-This extension is developed for Chrome and other Chromium-based browsers.
+This extension is developed for Chrome, Firefox, and other Chromium-based browsers.
 
 ## 📰 Sites for searching 📰
 ### You can search info on this sites
@@ -17,6 +16,7 @@ This extension is developed for Chrome and other Chromium-based browsers.
 | Name    | must support | checked |
 |---------|--------------|---------|
 | Chrome  | Yes ✅      | Yes ✅  |
+| Firefox | Yes ✅      | Yes ✅  |
 | Brave   | Yes ✅      | Yes ✅  |
 | Edge    | Yes ✅      | Yes ✅  |
 | Yandex  | Yes ✅      | No  ⛔️  |
@@ -33,11 +33,31 @@ This extension is developed for Chrome and other Chromium-based browsers.
 
 
 ## 🛠️ Installation 🛠️
+### For Chrome/Chromium-based browsers:
 1. Download the Zip file from the releases page
 2. Unzip the archive to any location
 3. Go to `chrome://extensions/`
 4. Enable ___«Developer Mode»___
 5. Click ___«Load unpacked extension»___ and select the project folder
+
+### For Firefox:
+1. Download the Zip file from the releases page
+2. Unzip the archive to any location
+3. Go to `about:debugging#/runtime/this-firefox`
+4. Click ___«Load Temporary Add-on»___
+5. Select the `manifest.json` file from the project folder
+
+## 🧪 Testing in Firefox 🧪
+To test the extension in Firefox:
+1. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+2. Click ___«Load Temporary Add-on»___
+3. Select the `manifest.json` file from the project folder
+4. Verify the extension is loaded:
+   - ✅ Extension icon is visible in the toolbar
+   - ✅ Popup opens when clicking the icon
+   - ✅ Search functionality works from popup
+   - ✅ Context menu appears when selecting text
+   - ✅ Context menu items open new tabs with search results
 
 ## ⚙️ How to use ⚙️
 ### 🔍 Via the context menu 🔍

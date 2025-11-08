@@ -1,3 +1,8 @@
+// Polyfill for Firefox compatibility
+if (typeof browser === "undefined") {
+    var browser = chrome;
+}
+
 function searchingOnGithub() {
     const editTextLable = document.getElementById("searchTextEdit");
     if (editTextLable) {
@@ -27,7 +32,7 @@ function searchingOnGithub() {
             }
             
             if (url != ``){
-                chrome.tabs.create({ url });
+                browser.tabs.create({ url });
             }
         }
     }

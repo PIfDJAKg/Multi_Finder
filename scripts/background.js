@@ -1,40 +1,45 @@
-chrome.runtime.onInstalled.addListener(() => {
-    chrome.contextMenus.create({
+// Polyfill for Firefox compatibility
+if (typeof browser === "undefined") {
+    var browser = chrome;
+}
+
+browser.runtime.onInstalled.addListener(() => {
+    browser.contextMenus.create({
         id: "github",
         title: "Find on Github",
         type: "normal",
         contexts: ["selection"]
     });
     
-    chrome.contextMenus.create({
+    browser.contextMenus.create({
         id: "wikipedia",
         title: "Find on Wiki",
         type: "normal",
         contexts: ["selection"]
     });
     
-    chrome.contextMenus.create({
+    browser.contextMenus.create({
         id: "stackoverflow",
         title: "Find on StackOverflow",
         type: "normal",
         contexts: ["selection"]
     })
 
-    chrome.contextMenus.create({
+    browser.contextMenus.create({
         id: "pypi",
         title: "Find on PyPI",
         type: "normal",
         contexts: ["selection"]
     })
 
-    chrome.contextMenus.create({
+    browser.contextMenus.create({
         id: "reddit",
         title: "Find on Reddit",
         type: "normal",
         contexts: ["selection"]
     })
     
-    chrome.contextMenus.create({
+    browser.contextMenus.create({
         id: "pinterest",
         title: "Find on Pinterest",
         type: "normal",
@@ -44,7 +49,7 @@ chrome.runtime.onInstalled.addListener(() => {
     
 });
 
-chrome.contextMenus.onClicked.addListener((info) => {
+browser.contextMenus.onClicked.addListener((info) => {
     const query = info.selectionText
     var url = ``;
     
@@ -70,6 +75,6 @@ chrome.contextMenus.onClicked.addListener((info) => {
     }
 
     if (url != ``){
-        chrome.tabs.create({ url })
+        browser.tabs.create({ url })
     }
 });
