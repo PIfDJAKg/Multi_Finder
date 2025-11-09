@@ -3,50 +3,56 @@ if (typeof browser === "undefined") {
     var browser = chrome;
 }
 
+function createMenus() {
+    browser.contextMenus.removeAll(() => {
+        browser.contextMenus.create({
+            id: "github",
+            title: "Find on Github",
+            type: "normal",
+            contexts: ["selection"]
+        });
+        
+        browser.contextMenus.create({
+            id: "wikipedia",
+            title: "Find on Wiki",
+            type: "normal",
+            contexts: ["selection"]
+        });
+        
+        browser.contextMenus.create({
+            id: "stackoverflow",
+            title: "Find on StackOverflow",
+            type: "normal",
+            contexts: ["selection"]
+        });
+
+        browser.contextMenus.create({
+            id: "pypi",
+            title: "Find on PyPI",
+            type: "normal",
+            contexts: ["selection"]
+        });
+
+        browser.contextMenus.create({
+            id: "reddit",
+            title: "Find on Reddit",
+            type: "normal",
+            contexts: ["selection"]
+        });
+        
+        browser.contextMenus.create({
+            id: "pinterest",
+            title: "Find on Pinterest",
+            type: "normal",
+            contexts: ["selection"]
+        });
+    });
+}
+
+createMenus();
+
 browser.runtime.onInstalled.addListener(() => {
-    browser.contextMenus.create({
-        id: "github",
-        title: "Find on Github",
-        type: "normal",
-        contexts: ["selection"]
-    });
-    
-    browser.contextMenus.create({
-        id: "wikipedia",
-        title: "Find on Wiki",
-        type: "normal",
-        contexts: ["selection"]
-    });
-    
-    browser.contextMenus.create({
-        id: "stackoverflow",
-        title: "Find on StackOverflow",
-        type: "normal",
-        contexts: ["selection"]
-    })
-
-    browser.contextMenus.create({
-        id: "pypi",
-        title: "Find on PyPI",
-        type: "normal",
-        contexts: ["selection"]
-    })
-
-    browser.contextMenus.create({
-        id: "reddit",
-        title: "Find on Reddit",
-        type: "normal",
-        contexts: ["selection"]
-    })
-    
-    browser.contextMenus.create({
-        id: "pinterest",
-        title: "Find on Pinterest",
-        type: "normal",
-        contexts: ["selection"]
-    })
-
-    
+    createMenus();
 });
 
 browser.contextMenus.onClicked.addListener((info) => {
