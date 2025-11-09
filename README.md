@@ -1,5 +1,5 @@
 # Multi_Finder - Fast searching from any text
-***Github Search*** — is a browser extension that lets you search GitHub with one click, directly from the context menu or via the extension's pop-up window.
+***Multi Finder*** — is a browser extension that lets you search GitHub with one click, directly from the context menu or via the extension's pop-up window.
 
 This extension is developed for Chrome, Firefox, and other Chromium-based browsers.
 
