@@ -19,7 +19,7 @@ This extension is developed for Chrome, Firefox, and other Chromium-based browse
 | Firefox | Yes ✅      | Yes ✅  |
 | Brave   | Yes ✅      | Yes ✅  |
 | Edge    | Yes ✅      | Yes ✅  |
-| Yandex  | Yes ✅      | No  ⛔️  |
+| Yandex  | Yes ✅      | Yes ✅  |
 
 ## 🚀 Possibilities 🚀
 + 🖱 Contextual search: Select any text on the page → right-click → select _«Find on GitHub»_ → a new tab will open with your search terms.
@@ -46,18 +46,6 @@ This extension is developed for Chrome, Firefox, and other Chromium-based browse
 3. Go to `about:debugging#/runtime/this-firefox`
 4. Click ___«Load Temporary Add-on»___
 5. Select the `manifest.json` file from the project folder
-
-## 🧪 Testing in Firefox 🧪
-To test the extension in Firefox:
-1. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
-2. Click ___«Load Temporary Add-on»___
-3. Select the `manifest.json` file from the project folder
-4. Verify the extension is loaded:
-   - ✅ Extension icon is visible in the toolbar
-   - ✅ Popup opens when clicking the icon
-   - ✅ Search functionality works from popup
-   - ✅ Context menu appears when selecting text
-   - ✅ Context menu items open new tabs with search results
 
 ## ⚙️ How to use ⚙️
 ### 🔍 Via the context menu 🔍
