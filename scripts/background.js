@@ -49,8 +49,10 @@ function createMenus() {
     });
 }
 
+// Create menus on extension start (for compatibility with Yandex Browser)
 createMenus();
 
+// Create menus when the extension is installed
 browser.runtime.onInstalled.addListener(() => {
     createMenus();
 });
